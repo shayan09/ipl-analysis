@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa1f8aad-5fe7-4839-ac67-706cc3f24e29" name="Default Changelist" comment="" />
+    <list default="true" id="fa1f8aad-5fe7-4839-ac67-706cc3f24e29" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ipl.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ipl.ipynb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/ipl.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="17" />
+              <selected id="13" />
             </state>
           </provider>
         </entry>
@@ -112,7 +114,7 @@
     <entry file="file://$PROJECT_DIR$/ipl.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="17" />
+          <selected id="13" />
         </state>
       </provider>
     </entry>
