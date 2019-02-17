@@ -1,0 +1,272 @@
+,Player,Runs,Wickets,Age,Batting Skill,Bowling Skill,Country,Type
+0,SK Raina,4548,25,32,Left_Hand,Right-arm offbreak,India,Batsman
+1,V Kohli,4423,4,30,Right_Hand,Right-arm medium,India,Batsman
+2,RG Sharma,4207,15,31,Right_Hand,Right-arm offbreak,India,Batsman
+3,CH Gayle,3651,18,39,Left_Hand,Right-arm offbreak,West Indies,Batsman
+4,S Dhawan,3561,4,33,Left_Hand,Right-arm offbreak,India,Batsman
+5,AM Rahane,3057,1,30,Right_Hand,Right-arm medium,India,Batsman
+6,YK Pathan,2922,41,36,Right_Hand,Right-arm offbreak,India,All Rounder
+7,V Sehwag,2728,6,40,Right_Hand,Right-arm offbreak,India,Batsman
+8,SR Watson,2628,86,37,Right_Hand,Right-arm fast-medium,Australia,All Rounder
+9,Yuvraj Singh,2591,36,37,Left_Hand,Slow left-arm orthodox,India,All Rounder
+10,JH Kallis,2427,65,43,Right_Hand,Right-arm fast-medium,South Africa,All Rounder
+11,DR Smith,2385,26,35,Right_Hand,Right-arm medium,West Indies,All Rounder
+12,KA Pollard,2354,56,31,Right_Hand,Right-arm medium-fast,West Indies,All Rounder
+13,AC Gilchrist,2069,1,47,Left_Hand,Right-arm offbreak,Australia,Batsman
+14,JP Duminy,1993,23,34,Left_Hand,Right-arm offbreak,South Africa,Batsman
+15,RA Jadeja,1732,82,30,Left_Hand,Slow left-arm orthodox,India,All Rounder
+16,MK Tiwary,1648,1,33,Right_Hand,Legbreak googly,India,Batsman
+17,AJ Finch,1604,1,32,Right_Hand,Slow left-arm orthodox,Australia,Batsman
+18,BJ Hodge,1400,17,44,Right_Hand,Right-arm offbreak,Australia,Batsman
+19,SC Ganguly,1349,10,46,Left_Hand,Right-arm medium,India,Batsman
+20,DJ Hussey,1322,8,41,Right_Hand,Right-arm offbreak,Australia,Batsman
+21,DJ Bravo,1262,122,35,Right_Hand,Right-arm medium-fast,West Indies,All Rounder
+22,GJ Maxwell,1229,11,30,Right_Hand,Right-arm offbreak,Australia,Batsman
+23,TM Dilshan,1153,5,42,Right_Hand,Right-arm offbreak,Sri Lanka,Batsman
+24,IK Pathan,1150,80,34,Left_Hand,Left-arm medium-fast,India,All Rounder
+25,LMP Simmons,1079,1,34,Right_Hand,Right-arm medium-fast,West Indies,Batsman
+26,KP Pietersen,1001,7,38,Right_Hand,Right-arm offbreak,South Africa,Batsman
+27,Y Venugopal Rao,985,6,36,Right_Hand,Right-arm offbreak,India,Batsman
+28,JA Morkel,975,85,37,Left_Hand,Right-arm medium-fast,South Africa,All Rounder
+29,A Symonds,974,20,43,Right_Hand,Right-arm offbreak,Australia,Batsman
+30,CL White,971,1,35,Right_Hand,Legbreak googly,Australia,Batsman
+31,MC Henriques,969,38,32,Right_Hand,Right-arm fast-medium,Australia,All Rounder
+32,Harbhajan Singh,799,127,38,Right_Hand,Right-arm offbreak,India,All Rounder
+33,ST Jayasuriya,768,13,49,Left_Hand,Slow left-arm orthodox,Sri Lanka,Batsman
+34,STR Binny,766,21,34,Right_Hand,Right-arm medium,India,Batsman
+35,AD Mathews,724,27,31,Right_Hand,Right-arm fast-medium,Sri Lanka,All Rounder
+36,TL Suman,676,6,35,Right_Hand,Right-arm offbreak,India,Batsman
+37,AM Nayar,672,9,35,Left_Hand,Right-arm medium,India,Batsman
+38,AR Patel,606,58,25,Left_Hand,Slow left-arm orthodox,India,All Rounder
+39,JD Ryder,604,8,34,Left_Hand,Right-arm medium,New Zealand,Batsman
+40,AD Russell,574,31,30,Right_Hand,Right-arm fast,West Indies,Bowler
+41,RS Bopara,531,11,33,Right_Hand,Right-arm medium,England,Other
+42,JP Faulkner,527,61,28,Right_Hand,Left-arm fast-medium,Australia,Bowler
+43,CJ Anderson,521,8,28,Left_Hand,Left-arm medium-fast,New Zealand,Other
+44,PP Chawla,515,126,30,Left_Hand,Legbreak,India,Bowler
+45,PC Valthaty,505,7,35,Right_Hand,Right-arm medium,India,Other
+46,Shakib Al Hasan,500,43,31,Left_Hand,Slow left-arm orthodox,Bangladesh,Bowler
+47,KH Pandya,480,16,27,Left_Hand,Slow left-arm orthodox,India,Other
+48,CH Morris,439,54,31,Right_Hand,Right-arm fast-medium,South Africa,Bowler
+49,NLTC Perera,424,31,29,Left_Hand,Right-arm medium-fast,Sri Lanka,Bowler
+50,DT Christian,420,30,35,Right_Hand,Right-arm fast-medium,Australia,Bowler
+51,JR Hopes,417,14,40,Right_Hand,Right-arm medium,Australia,Other
+52,J Botha,409,25,36,Right_Hand,Right-arm offbreak,South Africa,Other
+53,HH Pandya,406,10,25,Right_Hand,Right-arm medium-fast,India,Other
+54,LR Shukla,405,15,37,Right_Hand,Right-arm medium,India,Other
+55,AL Menaria,401,3,28,Left_Hand,Slow left-arm orthodox,India,Other
+56,Azhar Mahmood,388,29,43,Right_Hand,Right-arm fast-medium,Pakistan,Bowler
+57,DB Ravi Teja,375,1,31,Right_Hand,Legbreak googly,India,Other
+58,DJ Hooda,373,6,23,Right_Hand,Right-arm offbreak,India,Other
+59,P Negi,353,30,26,Left_Hand,Slow left-arm orthodox,India,Bowler
+60,Gurkeerat Singh,342,5,28,Right_Hand,Right-arm offbreak,India,Other
+61,R Bhatia,342,71,39,Right_Hand,Right-arm medium-fast,India,Bowler
+62,A Mishra,340,134,36,Right_Hand,Legbreak,India,Bowler
+63,P Kumar,340,90,32,Right_Hand,Right-arm medium,India,Bowler
+64,JEC Franklin,327,9,38,Left_Hand,Left-arm medium,New Zealand,Other
+65,RN ten Doeschate,326,2,38,Right_Hand,Right-arm medium-fast,Netherlands,Other
+66,KV Sharma,317,49,31,Left_Hand,Legbreak googly,India,Bowler
+67,R Vinay Kumar,304,103,35,Right_Hand,Right-arm medium,India,Bowler
+68,DJG Sammy,295,11,35,Right_Hand,Right-arm medium-fast,West Indies,Other
+69,Y Nagar,285,4,29,Right_Hand,Right-arm offbreak,India,Other
+70,GH Vihari,280,1,25,Right_Hand,Right-arm offbreak,India,Other
+71,A Ashish Reddy,280,18,27,Right_Hand,Right-arm medium,India,Other
+72,SP Narine,271,95,30,Left_Hand,Right-arm offbreak,West Indies,Bowler
+73,R Sathish,270,3,38,Right_Hand,Right-arm medium,India,Other
+74,R Ashwin,231,100,32,Right_Hand,Right-arm offbreak,India,Bowler
+75,MR Marsh,225,20,27,Right_Hand,Right-arm medium,Australia,Other
+76,AA Jhunjhunwala,217,1,36,Right_Hand,Right-arm offbreak,India,Other
+77,TM Head,205,2,25,Left_Hand,Right-arm offbreak,Australia,Other
+78,PD Collingwood,203,5,42,Right_Hand,Right-arm medium,England,Other
+79,SK Warne,198,57,49,Right_Hand,Legbreak googly,Australia,Bowler
+80,Bipul Sharma,187,17,35,Left_Hand,Slow left-arm orthodox,India,Other
+81,AB Agarkar,179,29,41,Right_Hand,Right-arm fast,India,Bowler
+82,MF Maharoof,177,27,34,Right_Hand,Right-arm fast-medium,India,Bowler
+83,DW Steyn,166,92,35,Right_Hand,Right-arm fast,South Africa,Bowler
+84,MP Stoinis,163,10,29,Right_Hand,Right-arm medium,Australia,Other
+85,MN Samuels,161,9,38,Right_Hand,Right-arm offbreak,West Indies,Other
+86,RE van der Merwe,159,21,34,Right_Hand,Slow left-arm orthodox,South Africa,Other
+87,R McLaren,159,12,36,Left_Hand,Right-arm medium-fast,South Africa,Other
+88,B Kumar,158,111,29,Right_Hand,Right-arm medium,India,Bowler
+89,R Dhawan,153,18,28,Right_Hand,Right-arm medium-fast,India,Other
+90,MG Johnson,151,60,37,Left_Hand,Left-arm fast,Australia,Bowler
+91,SM Pollock,147,11,45,Right_Hand,Right-arm fast-medium,South Africa,Other
+92,S Vidyut,145,1,37,Left_Hand,Slow left-arm orthodox,India,Other
+93,Sachin Baby,137,2,30,Left_Hand,Right-arm offbreak,India,Other
+94,SB Styris,131,8,43,Right_Hand,Right-arm medium,New Zealand,Other
+95,D Wiese,127,16,33,Right_Hand,Right-arm medium-fast,South Africa,Other
+96,M Morkel,126,77,34,Left_Hand,Right-arm fast,South Africa,Bowler
+97,BCJ Cutting,124,7,32,Right_Hand,Right-arm fast-medium,Australia,Other
+98,B Lee,124,25,42,Right_Hand,Right-arm fast,Australia,Other
+99,AB McDonald,123,11,37,Right_Hand,Right-arm fast-medium,Australia,Other
+100,DL Vettori,121,28,40,Left_Hand,Slow left-arm orthodox,New Zealand,Bowler
+101,RJ Harris,117,45,39,Right_Hand,Right-arm fast,Australia,Bowler
+102,Z Khan,117,102,40,Right_Hand,Left-arm fast-medium,India,Bowler
+103,KK Cooper,116,33,30,Right_Hand,Right-arm medium,West Indies,Bowler
+104,M Kartik,113,31,42,Left_Hand,Slow left-arm orthodox,India,Bowler
+105,MM Sharma,112,83,30,Right_Hand,Right-arm medium,India,Bowler
+106,LJ Wright,106,2,33,Right_Hand,Right-arm medium-fast,England,Other
+107,JDP Oram,106,9,40,Left_Hand,Right-arm fast-medium,New Zealand,Other
+108,MS Gony,99,37,35,Right_Hand,Right-arm medium,India,Bowler
+109,SD Chitnis,99,2,31,Right_Hand,Right-arm offbreak,India,Other
+110,MJ Clarke,98,2,37,Right_Hand,Slow left-arm orthodox,Australia,Other
+111,MA Starc,96,34,29,Left_Hand,Left-arm fast,Australia,Bowler
+112,CR Brathwaite,95,8,30,Right_Hand,Right-arm fast-medium,West Indies,Other
+113,UT Yadav,94,91,31,Right_Hand,Right-arm fast-medium,India,Bowler
+114,DS Kulkarni,90,76,30,Right_Hand,Right-arm medium,India,Bowler
+115,Iqbal Abdulla,88,40,29,Left_Hand,Slow left-arm orthodox,India,Bowler
+116,SL Malinga,88,154,35,Right_Hand,Right-arm fast,Sri Lanka,Bowler
+117,Ankit Sharma,87,12,27,Left_Hand,Slow left-arm orthodox,India,Other
+118,Shahid Afridi,81,9,38,Right_Hand,Legbreak googly,Pakistan,Other
+119,WPUJC Vaas,81,18,45,Left_Hand,Left-arm fast-medium,Sri Lanka,Other
+120,LA Carseldine,81,1,43,Left_Hand,Left-arm medium,Australia,Other
+121,AD Mascarenhas,79,19,41,Right_Hand,Right-arm fast-medium,England,Other
+122,PJ Cummins,77,17,25,Right_Hand,Right-arm fast,Australia,Other
+123,B Akhil,76,6,41,Right_Hand,Right-arm medium-fast,India,Other
+124,RR Powar,67,13,40,Right_Hand,Right-arm offbreak,India,Other
+125,R Sharma,66,40,31,Right_Hand,Right-arm offbreak,India,Bowler
+126,Mohammad Hafeez,64,2,38,Right_Hand,Right-arm offbreak,Pakistan,Other
+127,WD Parnell,63,26,29,Left_Hand,Left-arm medium-fast,South Africa,Bowler
+128,MJ McClenaghan,63,54,32,Left_Hand,Left-arm fast-medium,New Zealand,Bowler
+129,A Flintoff,62,2,41,Right_Hand,Right-arm fast-medium,England,Other
+130,S Aravind,59,45,34,Left_Hand,Left-arm medium-fast,India,Bowler
+131,WA Mota,56,4,37,Right_Hand,Right-arm medium,India,Other
+132,TG Southee,54,22,30,Right_Hand,Right-arm medium-fast,New Zealand,Other
+133,RP Singh,52,90,33,Right_Hand,Left-arm fast-medium,India,Bowler
+134,NM Coulter-Nile,52,36,31,Right_Hand,Right-arm fast,Australia,Bowler
+135,Shoaib Malik,52,2,37,Right_Hand,Right-arm offbreak,Pakistan,Other
+136,R Rampaul,51,16,34,Left_Hand,Right-arm fast-medium,West Indies,Other
+137,RV Gomez,50,5,33,Right_Hand,Right-arm medium,India,Other
+138,SB Bangar,49,4,46,Right_Hand,Right-arm medium-fast,India,Other
+139,J Suchith,48,10,25,Left_Hand,Slow left-arm orthodox,India,Other
+140,HV Patel,47,34,28,Right_Hand,Right-arm medium,India,Bowler
+141,Mohammed Shami,46,18,28,Right_Hand,Right-arm fast-medium,India,Other
+142,VR Aaron,46,38,29,Right_Hand,Right-arm fast,India,Bowler
+143,I Sharma,45,58,30,Right_Hand,Right-arm fast-medium,India,Bowler
+144,JDS Neesham,42,1,28,Left_Hand,Right-arm medium,New Zealand,Other
+145,SK Trivedi,42,65,36,Right_Hand,Right-arm medium,India,Bowler
+146,A Nehra,41,106,39,Right_Hand,Left-arm medium-fast,India,Bowler
+147,DJ Thornely,39,3,40,Right_Hand,Right-arm medium,Australia,Other
+148,Umar Gul,39,12,34,Right_Hand,Right-arm fast-medium,Pakistan,Other
+149,MM Patel,39,74,35,Right_Hand,Right-arm medium-fast,India,Bowler
+150,JO Holder,38,5,27,Right_Hand,Right-arm medium-fast,West Indies,Other
+151,S Narwal,37,5,36,Left_Hand,Right-arm medium,India,Other
+152,AN Ahmed,36,12,30,Right_Hand,Right-arm medium-fast,India,Other
+153,L Balaji,36,76,37,Right_Hand,Right-arm medium-fast,India,Bowler
+154,Joginder Sharma,36,12,35,Right_Hand,Right-arm fast-medium,India,Other
+155,KW Richardson,36,18,28,Right_Hand,Right-arm fast-medium,Australia,Other
+156,Sohail Tanvir,36,22,34,Left_Hand,Left-arm medium-fast,Pakistan,Other
+157,A Kumble,35,45,48,Right_Hand,Legbreak googly,India,Bowler
+158,R Tewatia,35,6,25,Left_Hand,Legbreak,India,Other
+159,S Sreesanth,34,40,36,Right_Hand,Right-arm fast-medium,India,Bowler
+160,AP Dole,34,5,31,Right_Hand,Right-arm medium-fast,India,Other
+161,A Mithun,34,7,29,Right_Hand,Right-arm medium,India,Other
+162,Anureet Singh,33,17,30,Right_Hand,Right-arm medium,India,Other
+163,D Salunkhe,33,1,36,Right_Hand,Legbreak,India,Other
+164,RJ Peterson,32,3,39,Left_Hand,Slow left-arm orthodox,South Africa,Other
+165,J Syed Mohammad,29,8,35,Left_Hand,Slow left-arm orthodox,India,Other
+166,SB Jakati,28,47,38,Left_Hand,Slow left-arm orthodox,India,Bowler
+167,JM Kemp,26,3,41,Right_Hand,Right-arm fast-medium,South Africa,Other
+168,AB Dinda,26,69,34,Right_Hand,Right-arm medium-fast,India,Bowler
+169,S Nadeem,26,37,29,Right_Hand,Slow left-arm orthodox,India,Bowler
+170,Sandeep Sharma,26,71,25,Right_Hand,Right-arm medium,India,Bowler
+171,JJ Bumrah,25,46,25,Right_Hand,Right-arm medium,India,Bowler
+172,MA Khote,24,2,38,Right_Hand,Right-arm medium,India,Other
+173,PJ Sangwan,24,35,28,Right_Hand,Left-arm medium,India,Bowler
+174,SW Tait,23,23,35,Right_Hand,Right-arm fast,Australia,Other
+175,BMAJ Mendis,23,1,36,Left_Hand,Legbreak,Sri Lanka,Other
+176,GB Hogg,22,23,48,Left_Hand,Slow left-arm chinaman,Australia,Other
+177,DE Bollinger,21,37,37,Left_Hand,Left-arm fast-medium,Australia,Bowler
+178,Kuldeep Yadav,20,18,24,Left_Hand,Slow left-arm chinaman,India,Other
+179,RR Raje,20,6,32,Right_Hand,Right-arm fast-medium,India,Other
+180,AC Thomas,20,14,42,Right_Hand,Right-arm fast-medium,England,Other
+181,M Muralitharan,20,64,46,Right_Hand,Right-arm offbreak,Sri Lanka,Bowler
+182,R Shukla,19,5,28,Right_Hand,Right-arm medium,India,Other
+183,P Sahu,19,3,33,Right_Hand,Legbreak googly,India,Other
+184,JJ van der Wath,18,3,41,Right_Hand,Right-arm medium-fast,South Africa,Other
+185,Imran Tahir,18,47,39,Right_Hand,Legbreak googly,India,Bowler
+186,Harmeet Singh,18,26,26,Left_Hand,Slow left-arm orthodox,India,Bowler
+187,PV Tambe,18,28,47,Right_Hand,Legbreak,India,Bowler
+188,Parvez Rasool,17,4,30,Right_Hand,Right-arm offbreak,India,Other
+189,PP Ojha,16,89,32,Left_Hand,Slow left-arm orthodox,India,Bowler
+190,KC Cariappa,15,8,24,Right_Hand,Legbreak,India,Other
+191,GR Napier,15,1,39,Right_Hand,Right-arm medium,England,Other
+192,VY Mahesh,15,21,31,Right_Hand,Right-arm medium-fast,India,Other
+193,YS Chahal,15,70,28,Right_Hand,Legbreak googly,India,Bowler
+194,S Gopal,14,7,25,Right_Hand,Legbreak,India,Other
+195,DL Chahar,14,1,26,Right_Hand,Right-arm medium,India,Other
+196,S Badree,13,11,37,Right_Hand,Legbreak,West Indies,Other
+197,KJ Abbott,13,2,31,Right_Hand,Right-arm fast-medium,South Africa,Other
+198,Swapnil Singh,12,1,28,Right_Hand,Slow left-arm orthodox,India,Other
+199,DAJ Bracewell,12,3,28,Right_Hand,Right-arm fast-medium,New Zealand,Other
+200,T Thushara,12,8,37,Left_Hand,Left-arm fast-medium,Sri Lanka,Other
+201,AA Chavan,12,8,33,Left_Hand,Slow left-arm orthodox,India,Other
+202,Karanveer Singh,12,12,31,Right_Hand,Legbreak googly,India,Other
+203,T Henderson,11,1,44,Right_Hand,Right-arm fast-medium,South Africa,Other
+204,M Ntini,11,7,41,Right_Hand,Right-arm fast,South Africa,Other
+205,DNT Zoysa,11,2,40,Left_Hand,Left-arm fast-medium,Sri Lanka,Other
+206,J Theron,10,11,33,Right_Hand,Right-arm medium-fast,South Africa,Other
+207,D du Preez,10,4,37,Right_Hand,Right-arm fast-medium,South Africa,Other
+208,AG Murtaza,10,9,29,Left_Hand,Slow left-arm orthodox,India,Other
+209,SMSM Senanayake,10,9,34,Right_Hand,Right-arm offbreak,Sri Lanka,Other
+210,S Kaul,9,22,28,Right_Hand,Right-arm medium,India,Other
+211,SM Harwood,9,3,44,Right_Hand,Right-arm fast-medium,Australia,Other
+212,AA Noffke,9,1,41,Right_Hand,Right-arm fast-medium,Australia,Other
+213,CK Langeveldt,8,13,44,Right_Hand,Right-arm fast-medium,England,Other
+214,Jaskaran Singh,8,6,29,Right_Hand,Right-arm medium,India,Other
+215,CJ McKay,8,1,35,Right_Hand,Right-arm fast-medium,Australia,Other
+216,SN Thakur,7,12,27,Right_Hand,Right-arm medium,India,Other
+217,VS Malik,7,6,35,Right_Hand,Right-arm medium,India,Other
+218,Pankaj Singh,7,11,33,Right_Hand,Right-arm medium-fast,India,Other
+219,AF Milne,7,4,26,Right_Hand,Right-arm fast,New Zealand,Other
+220,BA Bhatt,6,12,28,Left_Hand,Slow left-arm orthodox,India,Other
+221,J Yadav,6,4,29,Right_Hand,Right-arm offbreak,India,Other
+222,SB Joshi,6,1,48,Left_Hand,Slow left-arm orthodox,India,Other
+223,AS Rajpoot,6,8,25,Right_Hand,Right-arm medium,India,Other
+224,P Awana,5,39,32,Right_Hand,Right-arm medium,India,Bowler
+225,SJ Srivastava,5,14,37,Right_Hand,Left-arm fast-medium,India,Other
+226,Shivam Sharma,5,4,25,Right_Hand,Right-arm offbreak,India,Other
+227,KMDN Kulasekara,5,5,36,Right_Hand,Right-arm fast-medium,Sri Lanka,Other
+228,JD Unadkat,5,56,27,Right_Hand,Left-arm medium,India,Bowler
+229,TA Boult,5,15,29,Right_Hand,Left-arm fast-medium,New Zealand,Other
+230,A Zampa,5,19,26,Right_Hand,Legbreak googly,Australia,Other
+231,A Uniyal,4,2,37,Left_Hand,Left-arm medium,India,Other
+232,GD McGrath,4,12,49,Right_Hand,Right-arm fast-medium,Australia,Other
+233,VRV Singh,4,12,34,Right_Hand,Right-arm medium-fast,India,Other
+234,BB Sran,4,14,26,Left_Hand,Left-arm medium,India,Other
+235,DP Nannes,4,28,42,Right_Hand,Left-arm fast,Australia,Bowler
+236,FH Edwards,4,5,37,Right_Hand,Right-arm fast,West Indies,Other
+237,A Chandila,4,11,35,Right_Hand,Right-arm offbreak,India,Other
+238,B Laughlin,4,1,36,Right_Hand,Right-arm fast-medium,Australia,Other
+239,CRD Fernando,4,17,39,Right_Hand,Right-arm fast-medium,Sri Lanka,Other
+240,JE Taylor,3,6,34,Right_Hand,Right-arm fast,New Zealand,Other
+241,CJ Jordan,3,12,30,Right_Hand,Right-arm fast-medium,England,Other
+242,R Ninan,3,3,33,Right_Hand,Right-arm offbreak,India,Other
+243,Mohammad Asif,3,8,36,Left_Hand,Right-arm fast-medium,Pakistan,Other
+244,D Kalyankrishna,3,2,35,Right_Hand,Right-arm medium-fast,India,Other
+245,S Tyagi,3,6,31,Right_Hand,Right-arm medium,India,Other
+246,Kamran Khan,3,10,27,Left_Hand,Left-arm medium-fast,India,Other
+247,BAW Mendis,3,8,33,Right_Hand,Right-arm offbreak,Sri Lanka,Other
+248,A Singh,2,28,37,Right_Hand,Right-arm medium-fast,India,Bowler
+249,SB Wagh,2,5,30,Left_Hand,Left-arm medium-fast,India,Other
+250,KP Appanna,2,9,30,Right_Hand,Slow left-arm orthodox,India,Other
+251,S Randiv,2,6,34,Right_Hand,Right-arm offbreak,Sri Lanka,Other
+252,RG More,2,1,27,Right_Hand,Right-arm medium,India,Other
+253,Shoaib Akhtar,2,5,43,Right_Hand,Right-arm fast,Pakistan,Other
+254,M de Lange,1,5,28,Right_Hand,Right-arm fast,South Africa,Other
+255,DJ Muthuswami,1,4,37,Right_Hand,Right-arm medium,India,Other
+256,SE Bond,1,9,43,Right_Hand,Right-arm fast,New Zealand,Other
+257,P Parameswaran,1,9,33,Right_Hand,Left-arm medium,India,Other
+258,DP Vijaykumar,1,4,32,Right_Hand,Right-arm medium,India,Other
+259,PM Sarvesh Kumar,1,1,29,Right_Hand,Right-arm medium,India,Other
+260,Shoaib Ahmed,1,5,28,Right_Hand,Right-arm fast-medium,Pakistan,Other
+261,BE Hendricks,1,9,28,Left_Hand,Left-arm fast-medium,South Africa,Other
+262,L Ablish,0,3,36,Right_Hand,Right-arm medium-fast,India,Other
+263,C Nanda,0,2,39,Right_Hand,Legbreak,India,Other
+264,YA Abdulla,0,15,36,Left_Hand,Left-arm fast-medium,India,Other
+265,V Pratap Singh,0,10,26,Right_Hand,Right-arm medium,India,Other
+266,M Ashwin,0,7,28,Right_Hand,Legbreak googly,India,Other
+267,ND Doshi,0,2,40,Right_Hand,Slow left-arm orthodox,India,Other
+268,IC Pandey,0,18,29,Right_Hand,Right-arm medium,India,Other
+269,S Kaushik,0,6,23,Right_Hand,Slow left-arm chinaman,India,Other
+270,S Ladda,0,5,32,Right_Hand,Legbreak,India,Other
