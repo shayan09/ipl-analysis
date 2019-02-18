@@ -1,4 +1,4 @@
-# Ipl-Kaggle-Dataset-Analysis
+# Ipl-Kaggle-Dataset-Analysis - [View](http://iplmodel.s3-website-us-east-1.amazonaws.com/#!/insights)
 ![](https://i2.wp.com/www.wallpapersbyte.com/wp-content/uploads/2016/04/IPL-2016-Team-Captains-IPL-9-MCC-Spirit-Sign-WallpapersByte-com-1366x768.jpg?resize=1366%2C768&ssl=1)
 
 ## Inspiration
