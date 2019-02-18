@@ -1,5 +1,5 @@
 # Ipl-Kaggle-Dataset-Analysis
-![IPL](https://raw.githubusercontent.com/shayan09/Ipl-Kaggle-Dataset-Analysis/IPL.jpg)
+![](https://i2.wp.com/www.wallpapersbyte.com/wp-content/uploads/2016/04/IPL-2016-Team-Captains-IPL-9-MCC-Spirit-Sign-WallpapersByte-com-1366x768.jpg?resize=1366%2C768&ssl=1)
 
 ## Inspiration
 Being a sports aficionado, I was always interested to work with a sports dataset. We have good knowledge about cricket and thus, we thought the IPL dataset would be a great to generate some meaningful insights. We were always curious on what factors are players purchased in auctions and wanted to kind of decipher the entire decision process.
