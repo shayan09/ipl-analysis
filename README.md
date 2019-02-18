@@ -14,7 +14,7 @@ We got the open data-set from Kaggle and did some data-preprocessing using _Nump
 The data-set wasn't big enough to train a Machine Learning Model, so we had to derive features from the data we had. Figuring out the different visualization tools and choosing the best one.
 
 ## Accomplishments that we're proud of
-Creating an in-depth analysis in a day and also built a Machine Learning model to suggest players.
+Winning 2nd Runners-Up at HackDFW for this.
 
 ## What's next for IPL Cricket Dataset Analysis
 It can be used in actual auctions and the accuracy could be increased with more data and features. These techniques can also be applied to  sports fields like NBA, NFL and others.
