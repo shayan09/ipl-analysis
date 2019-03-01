@@ -1,0 +1,729 @@
+<style>
+    form {
+        width: 380px;
+        margin: 4em auto;
+        padding: 3em 2em 2em 2em;
+        background: #fafafa;
+        border: 1px solid #ebebeb;
+        box-shadow: rgba(0,0,0.5,0.54902) 0px 1px 1px 0px,rgba(0,0,0.5,0.05804) 0px 1px 2px 0px;
+    }
+
+    .group {
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    .modal-content{
+        height:500px;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        -webkit-appearance: none;
+        display: block;
+        background: #fafafa;
+        color: #636363;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #757575;
+    }
+
+    input:focus { outline: none; }
+
+
+    /* Label */
+
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: all 0.2s ease;
+    }
+
+
+    /* active */
+
+    input:focus ~ label, input.used ~ label {
+        top: -20px;
+        transform: scale(.75); left: -2px;
+        /* font-size: 14px; */
+        color: #4a89dc;
+    }
+
+
+    /* Underline */
+
+    .bar {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #4a89dc;
+        transition: all 0.2s ease;
+    }
+
+    .bar:before { left: 50%; }
+
+    .bar:after { right: 50%; }
+
+
+    /* active */
+
+    input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
+
+    /* Highlight */
+
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+
+    /* active */
+
+    input:focus ~ .highlight {
+        animation: inputHighlighter 0.3s ease;
+    }
+
+
+    /* Animations */
+
+    @keyframes inputHighlighter {
+        from { background: #4a89dc; }
+        to 	{ width: 0; background: transparent; }
+    }
+
+
+    /* Button */
+
+    .button {
+        position: relative;
+        display: inline-block;
+        padding: 12px 24px;
+        margin: .3em 0 1em 0;
+        width: 100%;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 16px;
+        line-height: 20px;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        letter-spacing: 1px;
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid #3160B6;
+        cursor: pointer;
+        transition: all 0.15s ease;
+    }
+    .button:focus { outline: 0; }
+
+
+    /* Button modifiers */
+
+    .buttonBlue {
+        background: #4a89dc;
+        text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+    }
+
+    .buttonBlue:hover { background: #357bd8; }
+
+
+    /* Ripples container */
+
+    .ripples {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: transparent;
+    }
+
+
+    /* Ripples circle */
+
+    .ripplesCircle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .ripples.is-active .ripplesCircle {
+        animation: ripples .4s ease-in;
+    }
+
+
+    /* Ripples animation */
+
+    @keyframes ripples {
+        0% { opacity: 0; }
+
+        25% { opacity: 1; }
+
+        100% {
+            width: 200%;
+            padding-bottom: 200%;
+            opacity: 0;
+        }
+    }
+</style>
+<!--<h1 style="text-align: center;">-->
+    <!--RISK SCORE CALCULATOR FOR BUSINESSES-->
+<!--</h1>-->
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+</nav>
+
+<div class="container">
+    <div>
+        <div class="row " style="margin-top: 5%">
+            <div class="jumbotron jumbotron-fluid ist-group col-md-12">
+                <div class="container text-center">
+                    <h1 class="display-4">Usefull Insights</h1>
+                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="list-group col-md-12 table-striped">
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal11">Runs scored across seasons</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal12">Number of matches played each season</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal13">Man of the match awards</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal14">Likelihood of Toss determining win</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal15">Favourite venues</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal16">Toss Decisions over the seasons</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal17">Experienced Umpires</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal18">Stacked column chart</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal19">Analyzing two teams battle over seasons (MI vs CSK)</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal20">Average innings score across seasons</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal21">Top run scorers</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal22">Highest Wicket Takers</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal23">Distribution of scores by Top scoring batsman</button>
+                <button type="button" class="list-group-item list-group-item-action"  data-toggle="modal" data-target="#modal26">Player dismissal distribution</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-xl" id="modal11" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container11" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-xl" id="modal12" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container12" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-xl" id="modal13" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container13" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade bd-example-modal-xl" id="modal14" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container14" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-xl" id="modal15" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container15" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-xl" id="modal16" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container16" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-xl" id="modal17" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container17" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-xl" id="modal18" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container18" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-xl" id="modal19" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container19" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-xl" id="modal20" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container20" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade bd-example-modal-xl" id="modal21" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container21" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade bd-example-modal-xl" id="modal22" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container22" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade bd-example-modal-xl" id="modal23" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div id="container23" style="width:100%; height:400px;"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="container24" style="width:100%; height:400px;"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="container25" style="width:100%; height:400px;"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--<div class="modal fade bd-example-modal-xl" id="modal24" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog modal-xl">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>-->
+                <!--<button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--<div class="text-white bg-secondary mb-3">-->
+                    <!--<div class="row no-gutters">-->
+                        <!--<div class="col-md-8">-->
+                            <!--<div id="container24" style="width:100%; height:400px;"></div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4">-->
+                            <!--<div class="card-body">-->
+                                <!--<h5 class="card-title">Card title</h5>-->
+                                <!--<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                                <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+<!--<div class="modal fade bd-example-modal-xl" id="modal25" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog modal-xl">-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>-->
+                <!--<button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">-->
+                    <!--<span aria-hidden="true">&times;</span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--<div class="text-white bg-secondary mb-3">-->
+                    <!--<div class="row no-gutters">-->
+                        <!--<div class="col-md-8">-->
+                            <!--<div id="container25" style="width:100%; height:400px;"></div>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4">-->
+                            <!--<div class="card-body">-->
+                                <!--<h5 class="card-title">Card title</h5>-->
+                                <!--<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+                                <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+<div class="modal fade bd-example-modal-xl" id="modal26" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title col-md-6 text-right" id="exampleModalLabel">Insights</h5>
+                <button type="button" class="close col-md-6 text-right" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-white bg-secondary mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div id="container26" style="width:100%; height:400px;"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,109 @@
+<style>
+
+  .wrapper{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .info{
+    margin: 0.5em 0;
+    font-size: 1.25em;
+    text-shadow: 0 0 0.5em #000;
+  }
+
+  .input-phone{
+    display: block;
+    margin: 2em auto;
+    padding: 0.5em 0.25em;
+    border: none;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    text-align: center;
+    box-shadow: 0 0 1em 0.25em rgba(0,0,0,0.2);
+  }
+
+  .sprinkler{
+  }
+
+  #container {
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    float: left;
+    opacity: 0;
+  }
+
+  canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #c-container,
+  #c2-container {
+    width: 100vw;
+    height: 25vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+</style>
+
+
+<div class="row" >
+  <div class="jumbotron sprinkler offset-md-4" style="background-color: #D36D3D !important;">
+    <label style="font-size: x-large;">
+      Enter the Zip Code to get the Humidity and Temperature.
+    </label>
+    <input class="input-phone" type='text' phone-input ng-model="zipCode"/>
+    <p><a class="btn btn-lg btn-success" ng-click="getData()">Get Humidity</a></p>
+  </div>
+  <button style="display: none" id="openModel1" type="button" data-toggle="modal" data-target="#myModal1"  class="btn btn-info btn-lg" >Open Modal</button>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <!--<div class="modal-header">-->
+      <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+      <!--<h4 class="modal-title">Modal Header</h4>-->
+      <!--</div>-->
+      <!--<div class="modal-body">-->
+      <!--<p>Some text in the modal.</p>-->
+      <!--</div>-->
+      <!--<div class="modal-footer">-->
+      <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+      <!--</div>-->
+      <div class="jumbotron">
+        <div style="font-weight:bolder;font-size: x-large;">Humidity</div>
+        <div style="font-size:70px;color: #06E7DD">{{humidity}}</div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!--<div class="row marketing">-->
+  <!--<h4>HTML5 Boilerplate</h4>-->
+  <!--<p>-->
+    <!--HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.-->
+  <!--</p>-->
+
+  <!--<h4>Angular</h4>-->
+  <!--<p>-->
+    <!--AngularJS is a toolset for building the framework most suited to your application development.-->
+  <!--</p>-->
+
+  <!--<h4>Karma</h4>-->
+  <!--<p>Spectacular Test Runner for JavaScript.</p>-->
+<!--</div>-->
